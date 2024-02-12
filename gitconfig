@@ -1,12 +1,13 @@
 [user]
     name = Dilawar Singh
-    email = dilawar.s.rajput@gmail.com
+    email = dilawar@subcom.tech
     signkey = 97FC9EE02C637EB6
 [merge]
     tool = vimdiff
 [diff]
     tool = vimdiff
 [alias]
+    lol = log --all --decorate --oneline --graph
     lg1 = log --graph --abbrev-commit --decorate --all
     lg = !"git lg1"
 [pull]

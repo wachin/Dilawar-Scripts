@@ -1,0 +1,13 @@
+#!/bin/bash
+set -x
+set -e
+
+PWD=$(pwd)
+
+docker run \
+    --rm \
+    --privileged \
+    -v $HOME/.config/osc/oscrc:/root/.oscrc \
+    -v /var/tmp:/var/tmp \
+    --mount=type=bind,source=$PWD/,target=/app \
+    -it docker.io/subcomdocker/osc osc $@
